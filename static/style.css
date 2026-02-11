@@ -1,0 +1,68 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+nav {
+  background: #222;
+  padding: 10px;
+}
+
+nav button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#map {
+  height: 400px;
+  width: 90%;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+video {
+  width: 300px;
+  margin: 10px;
+}
+
+.alert-box {
+  display: none;
+  background: red;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.media-box {
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.media-box button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

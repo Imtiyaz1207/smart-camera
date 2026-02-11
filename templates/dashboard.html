@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anti-Theft Vehicle Dashboard</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+
+  <!-- FREE MAP -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<nav>
+  <button onclick="showSection('mapSection')">Live Map</button>
+  <button onclick="showSection('imageSection')">Images</button>
+  <button onclick="showSection('videoSection')">Videos</button>
+</nav>
+
+<div id="alertBox" class="alert-box">🚨 THEFT ALERT DETECTED!</div>
+
+<section id="mapSection" class="section">
+  <h2>Status: <span id="status"></span></h2>
+  <div id="map"></div>
+  <button onclick="simulateMove()">Simulate Move</button>
+  <button onclick="simulateTheft()">Simulate Theft</button>
+</section>
+
+<section id="imageSection" class="section hidden">
+  <h2>📸 Captured Images</h2>
+  <div id="images"></div>
+</section>
+
+<section id="videoSection" class="section hidden">
+  <h2>🎥 Captured Videos</h2>
+  <div id="videos"></div>
+</section>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
